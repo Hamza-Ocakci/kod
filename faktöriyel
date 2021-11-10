@@ -1,0 +1,5 @@
+a=int(input("Bir sayı gir"))
+deger = 1
+for i in range(a):
+    deger = deger * (i+1)
+print(deger)
