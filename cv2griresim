@@ -1,0 +1,4 @@
+import cv2
+for i in range(1,11):
+    resim=cv2.imread("/home/ogrenci2/Masaüstü/uygulama/resim"+str(i)+".jpg",0)
+    cv2.imwrite("resimgri"+str(i)+".jpg")
