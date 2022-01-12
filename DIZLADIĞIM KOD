@@ -1,0 +1,17 @@
+# kod#kullaıcının istediği fekti ugulayan bir kod yaz
+#efektler border constaat border replicate border rap border reflect
+import cv2
+resim = cv2.imread("manzara.jpg")
+a=input("kırmızı")
+b=input("mavi")
+c=input("yeşil")
+soru=input("Hangi efekt uygulansın")
+if soru== ("BORDER_CONSTANT"):
+    çerçeve = cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_CONSTANT,value=[int(a),int(b),int(c)])
+elif soru==("BORDER_REFLECT"):
+    çerçeve = cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_REFLECT,value=[int(a),int(b),int(c)])
+elif soru==("BORDER_REPLICATE"):
+    çerçeve = cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_REPLICATE,value=[int(a),int(b),int(c)])
+elif soru==("BORDER_WRAP"):
+    çerçeve = cv2.copyMakeBorder(resim,10,10,10,10,cv2.BORDER_WRAP,value=[int(a),int(b),int(c)])
+cv2.imshow("resim",çerçeve)
